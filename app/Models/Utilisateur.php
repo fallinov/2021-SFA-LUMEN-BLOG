@@ -6,7 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Utilisateur extends Model
 {
+    /**
+     * Indique que App\Model\Utilisateur possède un factory
+     */
     use HasFactory;
+
     /**
      * La table associée au modèle.
      *
