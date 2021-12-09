@@ -1,12 +1,12 @@
 <?php
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Database\Factories\UtilisateurFactory;
 
 class Utilisateur extends Model
 {
+    use HasFactory;
     /**
      * La table associée au modèle.
      *
@@ -42,16 +42,6 @@ class Utilisateur extends Model
         'created_at',
         'updated_at'
     ];
-
-    /**
-     * Créez une nouvelle factory d'utilisateur
-     *
-     * @return Factory
-     */
-    protected static function factory(): Factory
-    {
-        return UtilisateurFactory::new();
-    }
 }
 
 
